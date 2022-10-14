@@ -1,4 +1,6 @@
 public class Book {
+    private final String title;
+    private final Author author;
     private int publikationYear;
 
     public Book(String title, Author author, int publikationYear) {
@@ -19,5 +21,8 @@ public class Book {
     }
     public void setPublikationYear(int publikationYear) {
         this.publikationYear = publikationYear;
+    }
+    public String bookInfo() {
+        return "Книга: "+this.title+", Автор: "+this.author.getFullName()+", Год публикации: "+this.publikationYear;
     }
 }

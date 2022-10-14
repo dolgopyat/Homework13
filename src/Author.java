@@ -12,4 +12,7 @@ public class Author {
     public String getSurname() {
         return this.surname;
     }
+    public String getFullName() {
+        return this.name + " " + this.surname;
+    }
 }
